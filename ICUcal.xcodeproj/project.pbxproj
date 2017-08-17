@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6A67E401D30F1A865CE17E /* Pods_ICUcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F603DE6A050FB546EA915E29 /* Pods_ICUcalTests.framework */; };
+		3E6142DE7249300EE6A051F6 /* Pods_ICUcal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A25AAAEC57E490922BB9F2 /* Pods_ICUcal.framework */; };
 		8407B6471F45CA73000F25AC /* Formula.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B6451F45CA73000F25AC /* Formula.storyboard */; };
 		8407B6491F45CAA8000F25AC /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B6481F45CAA8000F25AC /* Favorite.storyboard */; };
 		8407B64C1F45CACC000F25AC /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B64A1F45CACC000F25AC /* Patient.storyboard */; };
@@ -17,6 +19,7 @@
 		84A8D0721F45C7E6003FCB55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A8D0701F45C7E6003FCB55 /* LaunchScreen.storyboard */; };
 		84A8D07D1F45C7E6003FCB55 /* ICUcalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D07C1F45C7E6003FCB55 /* ICUcalTests.swift */; };
 		84A8D0881F45C7E6003FCB55 /* ICUcalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D0871F45C7E6003FCB55 /* ICUcalUITests.swift */; };
+		FC951EFE69C3D78D1B920826 /* Pods_ICUcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B003E39CA5F6D196A18C9120 /* Pods_ICUcalUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EF30DF53BBACDF2A048D9C8 /* Pods-ICUcal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal.debug.xcconfig"; sourceTree = "<group>"; };
+		1E6DE55BBD5471721674950D /* Pods-ICUcalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests.release.xcconfig"; sourceTree = "<group>"; };
+		24DD54E58F75471470E52876 /* Pods-ICUcalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5FE3F563D50B630F3A8A1BB2 /* Pods-ICUcal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcal.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal.release.xcconfig"; sourceTree = "<group>"; };
 		8407B6461F45CA73000F25AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Formula.storyboard; sourceTree = "<group>"; };
 		8407B6481F45CAA8000F25AC /* Favorite.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
 		8407B64B1F45CACC000F25AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Patient.storyboard; sourceTree = "<group>"; };
@@ -53,6 +60,11 @@
 		84A8D0831F45C7E6003FCB55 /* ICUcalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICUcalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A8D0871F45C7E6003FCB55 /* ICUcalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICUcalUITests.swift; sourceTree = "<group>"; };
 		84A8D0891F45C7E6003FCB55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4FCDDD3FE43A7233851248 /* Pods-ICUcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B003E39CA5F6D196A18C9120 /* Pods_ICUcalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7092100A86447F727C75956 /* Pods-ICUcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7A25AAAEC57E490922BB9F2 /* Pods_ICUcal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F603DE6A050FB546EA915E29 /* Pods_ICUcalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6142DE7249300EE6A051F6 /* Pods_ICUcal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6A67E401D30F1A865CE17E /* Pods_ICUcalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC951EFE69C3D78D1B920826 /* Pods_ICUcalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DF82D35777AC0AFAB3418B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7A25AAAEC57E490922BB9F2 /* Pods_ICUcal.framework */,
+				F603DE6A050FB546EA915E29 /* Pods_ICUcalTests.framework */,
+				B003E39CA5F6D196A18C9120 /* Pods_ICUcalUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FF777DF93FBE86A53BBDA83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EF30DF53BBACDF2A048D9C8 /* Pods-ICUcal.debug.xcconfig */,
+				5FE3F563D50B630F3A8A1BB2 /* Pods-ICUcal.release.xcconfig */,
+				8A4FCDDD3FE43A7233851248 /* Pods-ICUcalTests.debug.xcconfig */,
+				1E6DE55BBD5471721674950D /* Pods-ICUcalTests.release.xcconfig */,
+				24DD54E58F75471470E52876 /* Pods-ICUcalUITests.debug.xcconfig */,
+				C7092100A86447F727C75956 /* Pods-ICUcalUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84A8D05B1F45C7E5003FCB55 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +125,8 @@
 				84A8D07B1F45C7E6003FCB55 /* ICUcalTests */,
 				84A8D0861F45C7E6003FCB55 /* ICUcalUITests */,
 				84A8D0651F45C7E6003FCB55 /* Products */,
+				5FF777DF93FBE86A53BBDA83 /* Pods */,
+				0DF82D35777AC0AFAB3418B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A8D08C1F45C7E6003FCB55 /* Build configuration list for PBXNativeTarget "ICUcal" */;
 			buildPhases = (
+				8C145B265EB26979C2A6F136 /* [CP] Check Pods Manifest.lock */,
 				84A8D0601F45C7E5003FCB55 /* Sources */,
 				84A8D0611F45C7E5003FCB55 /* Frameworks */,
 				84A8D0621F45C7E5003FCB55 /* Resources */,
+				B3002E19562683E2F93BBE0A /* [CP] Embed Pods Frameworks */,
+				7CB66650DAA9A937DFDD51BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A8D08F1F45C7E6003FCB55 /* Build configuration list for PBXNativeTarget "ICUcalTests" */;
 			buildPhases = (
+				6FE267F6A0DC69952D7528D6 /* [CP] Check Pods Manifest.lock */,
 				84A8D0741F45C7E6003FCB55 /* Sources */,
 				84A8D0751F45C7E6003FCB55 /* Frameworks */,
 				84A8D0761F45C7E6003FCB55 /* Resources */,
+				E60325F5537BA7C28375655A /* [CP] Embed Pods Frameworks */,
+				C6BCA2DBE55EF99AD8CF7AC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A8D0921F45C7E6003FCB55 /* Build configuration list for PBXNativeTarget "ICUcalUITests" */;
 			buildPhases = (
+				A81B556E1EE76722332EEC62 /* [CP] Check Pods Manifest.lock */,
 				84A8D07F1F45C7E6003FCB55 /* Sources */,
 				84A8D0801F45C7E6003FCB55 /* Frameworks */,
 				84A8D0811F45C7E6003FCB55 /* Resources */,
+				8694C7B177DF63FF4F092E6C /* [CP] Embed Pods Frameworks */,
+				819E0B3DBD9F84D471F28BDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,7 +251,6 @@
 				TargetAttributes = {
 					84A8D0631F45C7E5003FCB55 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = TTBVAW2S4M;
 						ProvisioningStyle = Automatic;
 					};
 					84A8D0771F45C7E6003FCB55 = {
@@ -268,6 +316,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FE267F6A0DC69952D7528D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CB66650DAA9A937DFDD51BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819E0B3DBD9F84D471F28BDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8694C7B177DF63FF4F092E6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C145B265EB26979C2A6F136 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A81B556E1EE76722332EEC62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3002E19562683E2F93BBE0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6BCA2DBE55EF99AD8CF7AC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60325F5537BA7C28375655A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84A8D0601F45C7E5003FCB55 /* Sources */ = {
@@ -443,9 +629,10 @@
 		};
 		84A8D08D1F45C7E6003FCB55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF30DF53BBACDF2A048D9C8 /* Pods-ICUcal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TTBVAW2S4M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ICUcal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.Thinc.ICUcal;
@@ -456,9 +643,10 @@
 		};
 		84A8D08E1F45C7E6003FCB55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE3F563D50B630F3A8A1BB2 /* Pods-ICUcal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TTBVAW2S4M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ICUcal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.Thinc.ICUcal;
@@ -469,6 +657,7 @@
 		};
 		84A8D0901F45C7E6003FCB55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4FCDDD3FE43A7233851248 /* Pods-ICUcalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +673,7 @@
 		};
 		84A8D0911F45C7E6003FCB55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6DE55BBD5471721674950D /* Pods-ICUcalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +689,7 @@
 		};
 		84A8D0931F45C7E6003FCB55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD54E58F75471470E52876 /* Pods-ICUcalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = TTBVAW2S4M;
@@ -513,6 +704,7 @@
 		};
 		84A8D0941F45C7E6003FCB55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7092100A86447F727C75956 /* Pods-ICUcalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = TTBVAW2S4M;
