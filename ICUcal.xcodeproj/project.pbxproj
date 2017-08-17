@@ -24,6 +24,7 @@
 		84DED54D1F45D4DD0039194B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84DED5441F45D4C20039194B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84DED54E1F45D4DD0039194B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DED5451F45D4C20039194B /* RealmSwift.framework */; };
 		84DED54F1F45D4DD0039194B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84DED5451F45D4C20039194B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84DED5521F45D8EC0039194B /* NewPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DED5511F45D8EC0039194B /* NewPatient.swift */; };
 		FC951EFE69C3D78D1B920826 /* Pods_ICUcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B003E39CA5F6D196A18C9120 /* Pods_ICUcalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		84A8D0891F45C7E6003FCB55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DED5441F45D4C20039194B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Library/Developer/Xcode/DerivedData/ICUcal-ggwxgybjjsqofyafvqrzuafdypkj/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
 		84DED5451F45D4C20039194B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/ICUcal-ggwxgybjjsqofyafvqrzuafdypkj/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		84DED5511F45D8EC0039194B /* NewPatient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPatient.swift; sourceTree = "<group>"; };
 		8A4FCDDD3FE43A7233851248 /* Pods-ICUcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B003E39CA5F6D196A18C9120 /* Pods_ICUcalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7092100A86447F727C75956 /* Pods-ICUcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				84A8D06B1F45C7E6003FCB55 /* Main.storyboard */,
 				8407B64A1F45CACC000F25AC /* Patient.storyboard */,
 				845C0DB61F45D07D0092CE29 /* Patient.swift */,
+				84DED5511F45D8EC0039194B /* NewPatient.swift */,
 				8407B6481F45CAA8000F25AC /* Favorite.storyboard */,
 				8407B6451F45CA73000F25AC /* Formula.storyboard */,
 				84A8D06E1F45C7E6003FCB55 /* Assets.xcassets */,
@@ -495,6 +498,7 @@
 			files = (
 				84A8D06A1F45C7E6003FCB55 /* ViewController.swift in Sources */,
 				84A8D0681F45C7E6003FCB55 /* AppDelegate.swift in Sources */,
+				84DED5521F45D8EC0039194B /* NewPatient.swift in Sources */,
 				845C0DB71F45D07D0092CE29 /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,4 +9,10 @@
 import Foundation
 import RealmSwift
 
+class PatientTableViewController: UITableViewController {
+    
+}
 
+class PatientTableViewCell: UITableViewCell {
+    
+}
