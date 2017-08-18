@@ -41,7 +41,7 @@ class PatientTableViewController: UITableViewController {
             switch identifier {
             case "showPatientDetail":
                 let destination = segue.destination.childViewControllers[0] as! ProfileViewController
-                destination.parent = sender as! Patient
+                destination.patient = sender as? Patient
                 
 //                let destination = segue.destination.childViewControllers[0] as! NewPatientViewController
 //                destination.patient = sender as! Patient
