@@ -43,19 +43,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		84DED5501F45D4DE0039194B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0EF30DF53BBACDF2A048D9C8 /* Pods-ICUcal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal.debug.xcconfig"; sourceTree = "<group>"; };
 		0F57076AE47602ECF0477F14 /* Pods_ICUcalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,7 +199,6 @@
 				84A8D0621F45C7E5003FCB55 /* Resources */,
 				B3002E19562683E2F93BBE0A /* [CP] Embed Pods Frameworks */,
 				7CB66650DAA9A937DFDD51BD /* [CP] Copy Pods Resources */,
-				84DED5501F45D4DE0039194B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,11 +437,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
