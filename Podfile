@@ -7,6 +7,7 @@ target 'ICUcal' do
 
   # Pods for ICUcal
   pod 'RealmSwift'
+  pod 'SwiftyJSON'
 
   target 'ICUcalTests' do
     inherit! :search_paths
