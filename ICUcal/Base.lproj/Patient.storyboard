@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PD9-2G-ONf" id="CML-9Y-cc7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkX-8G-FZQ">
@@ -140,6 +140,16 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageTextField" destination="JEc-ai-D3T" id="XtE-o4-Rwi"/>
+                        <outlet property="allerygyTextField" destination="iEZ-G3-WKi" id="uu2-oL-5Hb"/>
+                        <outlet property="heightTextField" destination="mht-Oy-ZIR" id="i7r-jW-QFp"/>
+                        <outlet property="nameTextField" destination="qoa-hq-E2v" id="aEH-wQ-5fz"/>
+                        <outlet property="noteTextField" destination="cJN-cl-hCL" id="t9w-ju-9mq"/>
+                        <outlet property="sexSwitch" destination="25b-XT-Knd" id="jch-7d-xTp"/>
+                        <outlet property="sicknessTextField" destination="EHX-Wt-0Rf" id="03N-dg-89h"/>
+                        <outlet property="weightTextField" destination="lYU-bk-uRt" id="xo6-ZG-Jmd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNI-yg-gxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

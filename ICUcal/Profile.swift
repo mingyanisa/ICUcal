@@ -10,6 +10,8 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    var patient: Patient?
+    
     @IBAction func doneBtnPressed(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -18,8 +20,8 @@ class ProfileViewController: UIViewController {
         if let identifier = segue.identifier{
             switch identifier {
             case "editProfile":
-                let destination = segue.destination as! NewPatientViewController
-                destination.isEditingProfile = true
+                let destination = segue.destination.childViewControllers[0] as! NewPatientViewController
+                destination.patient = patient
                 break
             default:
                 break
