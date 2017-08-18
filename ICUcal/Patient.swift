@@ -42,9 +42,6 @@ class PatientTableViewController: UITableViewController {
             case "showPatientDetail":
                 let destination = segue.destination.childViewControllers[0] as! ProfileViewController
                 destination.patient = sender as? Patient
-                
-//                let destination = segue.destination.childViewControllers[0] as! NewPatientViewController
-//                destination.patient = sender as! Patient
                 break
             default:
                 break

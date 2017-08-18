@@ -12,6 +12,7 @@
 		8407B6471F45CA73000F25AC /* Formula.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B6451F45CA73000F25AC /* Formula.storyboard */; };
 		8407B6491F45CAA8000F25AC /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B6481F45CAA8000F25AC /* Favorite.storyboard */; };
 		8407B64C1F45CACC000F25AC /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B64A1F45CACC000F25AC /* Patient.storyboard */; };
+		840D78D01F472E800016E7FD /* AppInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D78CF1F472E800016E7FD /* AppInit.swift */; };
 		8421DB191F45EA1000C1997B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421DB181F45EA1000C1997B /* Data.swift */; };
 		845C0DB71F45D07D0092CE29 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C0DB61F45D07D0092CE29 /* Patient.swift */; };
 		84A8D0681F45C7E6003FCB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D0671F45C7E6003FCB55 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		8407B6461F45CA73000F25AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Formula.storyboard; sourceTree = "<group>"; };
 		8407B6481F45CAA8000F25AC /* Favorite.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
 		8407B64B1F45CACC000F25AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Patient.storyboard; sourceTree = "<group>"; };
+		840D78CF1F472E800016E7FD /* AppInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInit.swift; sourceTree = "<group>"; };
 		8421DB181F45EA1000C1997B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		845C0DB61F45D07D0092CE29 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		84A8D0641F45C7E6003FCB55 /* ICUcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICUcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 				84DED5531F45E4D90039194B /* Profile.swift */,
 				84DED5511F45D8EC0039194B /* NewPatient.swift */,
 				8421DB181F45EA1000C1997B /* Data.swift */,
+				840D78CF1F472E800016E7FD /* AppInit.swift */,
 				8407B6481F45CAA8000F25AC /* Favorite.storyboard */,
 				8407B6451F45CA73000F25AC /* Formula.storyboard */,
 				84A8D06E1F45C7E6003FCB55 /* Assets.xcassets */,
@@ -360,7 +363,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7CB66650DAA9A937DFDD51BD /* [CP] Copy Pods Resources */ = {
@@ -423,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A81B556E1EE76722332EEC62 /* [CP] Check Pods Manifest.lock */ = {
@@ -441,7 +444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B3002E19562683E2F93BBE0A /* [CP] Embed Pods Frameworks */ = {
@@ -506,6 +509,7 @@
 				84DED5541F45E4D90039194B /* Profile.swift in Sources */,
 				84A8D0681F45C7E6003FCB55 /* AppDelegate.swift in Sources */,
 				84DED5521F45D8EC0039194B /* NewPatient.swift in Sources */,
+				840D78D01F472E800016E7FD /* AppInit.swift in Sources */,
 				845C0DB71F45D07D0092CE29 /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
