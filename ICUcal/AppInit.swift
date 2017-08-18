@@ -39,7 +39,6 @@ class TabBarViewController: UITabBarController {
                 }
             }
             
-            
             let realm = try! Realm()
             
             try! realm.write {
