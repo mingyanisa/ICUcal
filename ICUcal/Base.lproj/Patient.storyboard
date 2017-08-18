@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ast-Vb-9dR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ast-Vb-9dR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PD9-2G-ONf" id="CML-9Y-cc7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkX-8G-FZQ">
@@ -357,7 +357,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-gg-syo">
-                                <rect key="frame" x="166" y="111" width="8" height="21"/>
+                                <rect key="frame" x="167" y="111" width="8" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -410,12 +410,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อายุ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="co3-EW-dEd">
-                                <rect key="frame" x="15" y="162" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เพศ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNJ-FI-sFE">
                                 <rect key="frame" x="16" y="213" width="28" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -452,6 +446,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="อายุ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="co3-EW-dEd">
+                                <rect key="frame" x="16" y="162" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -484,7 +484,7 @@
                             <constraint firstItem="Wz2-zX-AfU" firstAttribute="top" secondItem="XNJ-FI-sFE" secondAttribute="bottom" constant="30" id="lLZ-eU-AL9"/>
                             <constraint firstItem="eLb-jn-wQd" firstAttribute="leading" secondItem="9r8-Sd-VAd" secondAttribute="leadingMargin" id="m01-rv-Sro"/>
                             <constraint firstItem="xjG-QR-Y2U" firstAttribute="top" secondItem="jgV-Za-kVx" secondAttribute="bottom" constant="30" id="sae-1z-2S7"/>
-                            <constraint firstItem="BKA-gg-syo" firstAttribute="leading" secondItem="tDg-ph-myM" secondAttribute="trailing" constant="62" id="v6H-Gp-J37"/>
+                            <constraint firstItem="BKA-gg-syo" firstAttribute="leading" secondItem="tDg-ph-myM" secondAttribute="trailing" constant="63" id="v6H-Gp-J37"/>
                             <constraint firstItem="WVp-WX-a0x" firstAttribute="leading" secondItem="9r8-Sd-VAd" secondAttribute="leadingMargin" constant="150" id="xSo-i0-H85"/>
                             <constraint firstItem="tDg-ph-myM" firstAttribute="leading" secondItem="9r8-Sd-VAd" secondAttribute="leadingMargin" id="xTs-BY-8KI"/>
                             <constraint firstItem="yPb-Kt-TFI" firstAttribute="top" secondItem="eLb-jn-wQd" secondAttribute="bottom" constant="30" id="xVy-f2-cgI"/>
@@ -504,6 +504,16 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="NoteLabel" destination="WVp-WX-a0x" id="Rie-8s-eJn"/>
+                        <outlet property="ageLabel" destination="JgU-3Q-xVz" id="LMn-zq-Tyj"/>
+                        <outlet property="allergyLabel" destination="ou8-KY-Lyp" id="8le-HB-7yC"/>
+                        <outlet property="genderLabel" destination="zGo-4b-6sm" id="aJf-hN-jUq"/>
+                        <outlet property="heightLabel" destination="FsR-Yl-VC5" id="Luz-0b-Jg3"/>
+                        <outlet property="nameLabel" destination="BKA-gg-syo" id="uLu-lG-BQg"/>
+                        <outlet property="sicknessLabel" destination="EYh-7I-rJj" id="8UZ-t6-jWF"/>
+                        <outlet property="weightLabel" destination="Q7Y-Yu-qXa" id="whL-DR-C5g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtM-zT-5Xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

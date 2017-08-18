@@ -15,7 +15,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kb6-GT-UU6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="E22-IQ-lcK"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="JWk-Zk-WSn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JWk-Zk-WSn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +50,18 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FY2-4l-HgA">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FY2-4l-HgA" secondAttribute="bottom" id="5JM-Ny-X4k"/>
+                                    <constraint firstItem="FY2-4l-HgA" firstAttribute="leading" secondItem="Lzc-ZF-So4" secondAttribute="leading" id="8pd-Gc-eqj"/>
+                                    <constraint firstAttribute="trailing" secondItem="FY2-4l-HgA" secondAttribute="trailing" id="B0E-OT-RnA"/>
+                                    <constraint firstItem="FY2-4l-HgA" firstAttribute="top" secondItem="Lzc-ZF-So4" secondAttribute="top" id="Fzv-Jt-lxj"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>
