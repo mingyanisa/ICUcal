@@ -24,15 +24,16 @@ class NewPatientViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if patient != nil {
-            nameTextField.text = patient?.name
-            ageTextField.text = String(describing: patient?.age)
-            sexSwitch.isOn = (patient?.sex == "Male")
-            heightTextField.text = String(describing: patient?.height)
-            weightTextField.text = String(describing: patient?.weight)
-            sicknessTextField.text = patient?.sickness
-            allerygyTextField.text = patient?.allergy
-            noteTextField.text = patient?.note
+        print(patient)
+        if let formerData = patient {
+            nameTextField.text = formerData.name
+            ageTextField.text = String(describing: formerData.age)
+            sexSwitch.isOn = (formerData.sex == "Male")
+            heightTextField.text = String(describing: formerData.height)
+            weightTextField.text = String(describing: formerData.weight)
+            sicknessTextField.text = formerData.sickness
+            allerygyTextField.text = formerData.allergy
+            noteTextField.text = formerData.note
         }
     }
     
@@ -73,4 +74,4 @@ class NewPatientViewController: UIViewController {
         }
         self.dismiss(animated: true, completion: nil)
     }
-}
+    }

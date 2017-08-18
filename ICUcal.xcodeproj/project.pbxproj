@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E6142DE7249300EE6A051F6 /* Pods_ICUcal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A25AAAEC57E490922BB9F2 /* Pods_ICUcal.framework */; };
-		4FCED1FF10C997EFC05AA9A0 /* Pods_ICUcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D431B81DE2ECFF36B7AAB561 /* Pods_ICUcalUITests.framework */; };
 		8407B6471F45CA73000F25AC /* Formula.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B6451F45CA73000F25AC /* Formula.storyboard */; };
 		8407B6491F45CAA8000F25AC /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B6481F45CAA8000F25AC /* Favorite.storyboard */; };
 		8407B64C1F45CACC000F25AC /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8407B64A1F45CACC000F25AC /* Patient.storyboard */; };
 		840D78D01F472E800016E7FD /* AppInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D78CF1F472E800016E7FD /* AppInit.swift */; };
 		8421DB191F45EA1000C1997B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421DB181F45EA1000C1997B /* Data.swift */; };
 		845C0DB71F45D07D0092CE29 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C0DB61F45D07D0092CE29 /* Patient.swift */; };
+		848873111F47514A00A066A2 /* FormulaCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848873101F47514A00A066A2 /* FormulaCategory.swift */; };
 		84A8D0681F45C7E6003FCB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D0671F45C7E6003FCB55 /* AppDelegate.swift */; };
 		84A8D06A1F45C7E6003FCB55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D0691F45C7E6003FCB55 /* ViewController.swift */; };
 		84A8D06D1F45C7E6003FCB55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A8D06B1F45C7E6003FCB55 /* Main.storyboard */; };
@@ -24,7 +23,9 @@
 		84A8D0881F45C7E6003FCB55 /* ICUcalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D0871F45C7E6003FCB55 /* ICUcalUITests.swift */; };
 		84DED5521F45D8EC0039194B /* NewPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DED5511F45D8EC0039194B /* NewPatient.swift */; };
 		84DED5541F45E4D90039194B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DED5531F45E4D90039194B /* Profile.swift */; };
-		9A201E5E2D69EAF139F864C6 /* Pods_ICUcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F57076AE47602ECF0477F14 /* Pods_ICUcalTests.framework */; };
+		904CC9160C38FD15EB2A97CC /* Pods_ICUcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BCF9FF832F8E072A2D282C /* Pods_ICUcalTests.framework */; };
+		DAA4826E878BF004CA2C02E8 /* Pods_ICUcal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33529F6DCD956A9443AB83F /* Pods_ICUcal.framework */; };
+		F1ACE11FF2E301A9F4C31214 /* Pods_ICUcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E36368E4119768D19267E2 /* Pods_ICUcalUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,9 @@
 
 /* Begin PBXFileReference section */
 		0EF30DF53BBACDF2A048D9C8 /* Pods-ICUcal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal.debug.xcconfig"; sourceTree = "<group>"; };
-		0F57076AE47602ECF0477F14 /* Pods_ICUcalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13E36368E4119768D19267E2 /* Pods_ICUcalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6DE55BBD5471721674950D /* Pods-ICUcalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests.release.xcconfig"; sourceTree = "<group>"; };
+		24BCF9FF832F8E072A2D282C /* Pods_ICUcalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DD54E58F75471470E52876 /* Pods-ICUcalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FE3F563D50B630F3A8A1BB2 /* Pods-ICUcal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcal.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal.release.xcconfig"; sourceTree = "<group>"; };
 		8407B6461F45CA73000F25AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Formula.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		840D78CF1F472E800016E7FD /* AppInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInit.swift; sourceTree = "<group>"; };
 		8421DB181F45EA1000C1997B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		845C0DB61F45D07D0092CE29 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		848873101F47514A00A066A2 /* FormulaCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaCategory.swift; sourceTree = "<group>"; };
 		84A8D0641F45C7E6003FCB55 /* ICUcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICUcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A8D0671F45C7E6003FCB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A8D0691F45C7E6003FCB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,9 +75,8 @@
 		84DED5511F45D8EC0039194B /* NewPatient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPatient.swift; sourceTree = "<group>"; };
 		84DED5531F45E4D90039194B /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		8A4FCDDD3FE43A7233851248 /* Pods-ICUcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B33529F6DCD956A9443AB83F /* Pods_ICUcal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7092100A86447F727C75956 /* Pods-ICUcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D431B81DE2ECFF36B7AAB561 /* Pods_ICUcalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7A25AAAEC57E490922BB9F2 /* Pods_ICUcal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6142DE7249300EE6A051F6 /* Pods_ICUcal.framework in Frameworks */,
+				DAA4826E878BF004CA2C02E8 /* Pods_ICUcal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A201E5E2D69EAF139F864C6 /* Pods_ICUcalTests.framework in Frameworks */,
+				904CC9160C38FD15EB2A97CC /* Pods_ICUcalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FCED1FF10C997EFC05AA9A0 /* Pods_ICUcalUITests.framework in Frameworks */,
+				F1ACE11FF2E301A9F4C31214 /* Pods_ICUcalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,9 +110,9 @@
 		0DF82D35777AC0AFAB3418B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7A25AAAEC57E490922BB9F2 /* Pods_ICUcal.framework */,
-				0F57076AE47602ECF0477F14 /* Pods_ICUcalTests.framework */,
-				D431B81DE2ECFF36B7AAB561 /* Pods_ICUcalUITests.framework */,
+				B33529F6DCD956A9443AB83F /* Pods_ICUcal.framework */,
+				24BCF9FF832F8E072A2D282C /* Pods_ICUcalTests.framework */,
+				13E36368E4119768D19267E2 /* Pods_ICUcalUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +166,7 @@
 				840D78CF1F472E800016E7FD /* AppInit.swift */,
 				8407B6481F45CAA8000F25AC /* Favorite.storyboard */,
 				8407B6451F45CA73000F25AC /* Formula.storyboard */,
+				848873101F47514A00A066A2 /* FormulaCategory.swift */,
 				84A8D06E1F45C7E6003FCB55 /* Assets.xcassets */,
 				84A8D0701F45C7E6003FCB55 /* LaunchScreen.storyboard */,
 				84A8D0731F45C7E6003FCB55 /* Info.plist */,
@@ -349,7 +352,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7CB66650DAA9A937DFDD51BD /* [CP] Copy Pods Resources */ = {
@@ -412,7 +415,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A81B556E1EE76722332EEC62 /* [CP] Check Pods Manifest.lock */ = {
@@ -430,7 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B3002E19562683E2F93BBE0A /* [CP] Embed Pods Frameworks */ = {
@@ -440,13 +443,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ICUcal/Pods-ICUcal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +501,7 @@
 				8421DB191F45EA1000C1997B /* Data.swift in Sources */,
 				84DED5541F45E4D90039194B /* Profile.swift in Sources */,
 				84A8D0681F45C7E6003FCB55 /* AppDelegate.swift in Sources */,
+				848873111F47514A00A066A2 /* FormulaCategory.swift in Sources */,
 				84DED5521F45D8EC0039194B /* NewPatient.swift in Sources */,
 				840D78D01F472E800016E7FD /* AppInit.swift in Sources */,
 				845C0DB71F45D07D0092CE29 /* Patient.swift in Sources */,

@@ -8,7 +8,8 @@ target 'ICUcal' do
   # Pods for ICUcal
   pod 'RealmSwift'
   pod 'SwiftyJSON'
-
+  pod 'IQKeyboardManagerSwift'
+  
   target 'ICUcalTests' do
     inherit! :search_paths
     # Pods for testing

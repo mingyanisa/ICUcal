@@ -49,6 +49,23 @@ class PatientTableViewController: UITableViewController {
         }
         
     }
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let del = UITableViewRowAction(style: .normal, title: "Delete") { (action, indexPath) in
+            let realm = try! Realm()
+            try! realm.write {
+                realm.delete(realm.object(ofType:Patient.self, forPrimaryKey: self.allPatient?[indexPath.row].id)!)
+               
+            }
+            
+        }
+        del.backgroundColor = UIColor.red
+        return[del]
+    }
+    
 }
 
 class PatientTableViewCell: UITableViewCell {
