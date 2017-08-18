@@ -73,4 +73,4 @@ class NewPatientViewController: UIViewController {
         }
         self.dismiss(animated: true, completion: nil)
     }
-}
+    }

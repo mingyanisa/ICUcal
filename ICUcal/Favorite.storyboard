@@ -32,6 +32,7 @@
                             <outlet property="delegate" destination="1BM-Ym-ggK" id="Z6R-zU-Twk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Favorite" id="igN-8I-ea2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON1-qQ-8yh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +51,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="1BM-Ym-ggK" kind="show" id="v76-jn-cCu"/>
+                        <segue destination="1BM-Ym-ggK" kind="relationship" relationship="rootViewController" id="NLe-PC-Cg4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gr9-8h-dk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
