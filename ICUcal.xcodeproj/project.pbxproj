@@ -13,7 +13,8 @@
 		840D78D01F472E800016E7FD /* AppInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D78CF1F472E800016E7FD /* AppInit.swift */; };
 		8421DB191F45EA1000C1997B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421DB181F45EA1000C1997B /* Data.swift */; };
 		845C0DB71F45D07D0092CE29 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C0DB61F45D07D0092CE29 /* Patient.swift */; };
-		848873111F47514A00A066A2 /* FormulaCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848873101F47514A00A066A2 /* FormulaCategory.swift */; };
+		848873131F47E9D500A066A2 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848873121F47E9D500A066A2 /* CategoryViewController.swift */; };
+		848C34A81F488D83002E36E8 /* FormulaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C34A71F488D83002E36E8 /* FormulaController.swift */; };
 		84A8D0681F45C7E6003FCB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D0671F45C7E6003FCB55 /* AppDelegate.swift */; };
 		84A8D06A1F45C7E6003FCB55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D0691F45C7E6003FCB55 /* ViewController.swift */; };
 		84A8D06D1F45C7E6003FCB55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A8D06B1F45C7E6003FCB55 /* Main.storyboard */; };
@@ -58,7 +59,8 @@
 		840D78CF1F472E800016E7FD /* AppInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInit.swift; sourceTree = "<group>"; };
 		8421DB181F45EA1000C1997B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		845C0DB61F45D07D0092CE29 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
-		848873101F47514A00A066A2 /* FormulaCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaCategory.swift; sourceTree = "<group>"; };
+		848873121F47E9D500A066A2 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		848C34A71F488D83002E36E8 /* FormulaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaController.swift; sourceTree = "<group>"; };
 		84A8D0641F45C7E6003FCB55 /* ICUcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICUcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A8D0671F45C7E6003FCB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A8D0691F45C7E6003FCB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +168,8 @@
 				840D78CF1F472E800016E7FD /* AppInit.swift */,
 				8407B6481F45CAA8000F25AC /* Favorite.storyboard */,
 				8407B6451F45CA73000F25AC /* Formula.storyboard */,
-				848873101F47514A00A066A2 /* FormulaCategory.swift */,
+				848873121F47E9D500A066A2 /* CategoryViewController.swift */,
+				848C34A71F488D83002E36E8 /* FormulaController.swift */,
 				84A8D06E1F45C7E6003FCB55 /* Assets.xcassets */,
 				84A8D0701F45C7E6003FCB55 /* LaunchScreen.storyboard */,
 				84A8D0731F45C7E6003FCB55 /* Info.plist */,
@@ -501,8 +504,9 @@
 				8421DB191F45EA1000C1997B /* Data.swift in Sources */,
 				84DED5541F45E4D90039194B /* Profile.swift in Sources */,
 				84A8D0681F45C7E6003FCB55 /* AppDelegate.swift in Sources */,
-				848873111F47514A00A066A2 /* FormulaCategory.swift in Sources */,
+				848873131F47E9D500A066A2 /* CategoryViewController.swift in Sources */,
 				84DED5521F45D8EC0039194B /* NewPatient.swift in Sources */,
+				848C34A81F488D83002E36E8 /* FormulaController.swift in Sources */,
 				840D78D01F472E800016E7FD /* AppInit.swift in Sources */,
 				845C0DB71F45D07D0092CE29 /* Patient.swift in Sources */,
 			);
