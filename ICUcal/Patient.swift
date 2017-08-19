@@ -12,28 +12,24 @@ import RealmSwift
 class PatientTableViewController: UITableViewController {
     @IBOutlet var patientTableView: UITableView!
     
-    var allPatient: [Patient]?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let realm = try! Realm()
-        allPatient = Array(realm.objects(Patient.self))
-        
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (allPatient?.count)!
+        let realm = try! Realm()
+        let allPatient = Array(realm.objects(Patient.self))
+        return (allPatient.count)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = patientTableView.dequeueReusableCell(withIdentifier: "patientCell") as! PatientTableViewCell
-        cell.label.text = allPatient?[indexPath.row].name
+        let realm = try! Realm()
+        let allPatient = Array(realm.objects(Patient.self))
+        cell.label.text = allPatient[indexPath.row].name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showPatientDetail", sender: allPatient?[indexPath.row])
+        let realm = try! Realm()
+        let allPatient = Array(realm.objects(Patient.self))
+        performSegue(withIdentifier: "showPatientDetail", sender: allPatient[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,9 +52,11 @@ class PatientTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let del = UITableViewRowAction(style: .normal, title: "Delete") { (action, indexPath) in
             let realm = try! Realm()
+            let allPatient = Array(realm.objects(Patient.self))
+            //bug is here
             try! realm.write {
-                realm.delete(realm.object(ofType:Patient.self, forPrimaryKey: self.allPatient?[indexPath.row].id)!)
-               
+                realm.delete(allPatient[indexPath.row])
+                self.tableView.reloadData()
             }
             
         }
