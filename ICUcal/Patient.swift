@@ -12,6 +12,11 @@ import RealmSwift
 class PatientTableViewController: UITableViewController {
     @IBOutlet var patientTableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let realm = try! Realm()
         let allPatient = Array(realm.objects(Patient.self))
@@ -39,6 +44,10 @@ class PatientTableViewController: UITableViewController {
                 let destination = segue.destination.childViewControllers[0] as! ProfileViewController
                 destination.patient = sender as? Patient
                 break
+            case "addPatient":
+                let destination = segue.destination.childViewControllers[0] as! NewPatientViewController
+                destination.tableView = sender as? PatientTableViewController
+                break
             default:
                 break
             }
@@ -53,15 +62,17 @@ class PatientTableViewController: UITableViewController {
         let del = UITableViewRowAction(style: .normal, title: "Delete") { (action, indexPath) in
             let realm = try! Realm()
             let allPatient = Array(realm.objects(Patient.self))
-            //bug is here
             try! realm.write {
                 realm.delete(allPatient[indexPath.row])
                 self.tableView.reloadData()
             }
-            
         }
         del.backgroundColor = UIColor.red
         return[del]
+    }
+    
+    @IBAction func addBtnPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "addPatient", sender: self)
     }
     
 }

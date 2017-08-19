@@ -12,6 +12,7 @@ import RealmSwift
 class NewPatientViewController: UIViewController {
     
     var patient: Patient?
+    var tableView: PatientTableViewController?
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
@@ -72,5 +73,8 @@ class NewPatientViewController: UIViewController {
             }
         }
         self.dismiss(animated: true, completion: nil)
+        if let destination = tableView?.tableView{
+            destination.reloadData()
+        }
     }
-    }
+}
