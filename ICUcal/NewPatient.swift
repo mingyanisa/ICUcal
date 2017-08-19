@@ -24,7 +24,6 @@ class NewPatientViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(patient)
         if let formerData = patient {
             nameTextField.text = formerData.name
             ageTextField.text = String(describing: formerData.age)
