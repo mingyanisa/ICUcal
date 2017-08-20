@@ -35,7 +35,7 @@ class CategoryViewController : UICollectionViewController,UICollectionViewDelega
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
     }
-    var type = ["General","Hemodynamic","EKG","Nutrition","Nephro","DrugDose","Ventilator","Scoring Systems"]
+    var type = ["General","Hemodynamic","EKG","Nutrition","Nephro","Drugdose","Ventilator","Scoring Systems"]
     var pic = [#imageLiteral(resourceName: "General"),#imageLiteral(resourceName: "Hemodynamic"),#imageLiteral(resourceName: "EKG"),#imageLiteral(resourceName: "Nutrition"),#imageLiteral(resourceName: "Nephro"),#imageLiteral(resourceName: "Drug Dose"),#imageLiteral(resourceName: "Scoring"),#imageLiteral(resourceName: "Scoring")]
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return type.count
