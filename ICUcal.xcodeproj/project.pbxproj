@@ -25,6 +25,7 @@
 		84DED5521F45D8EC0039194B /* NewPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DED5511F45D8EC0039194B /* NewPatient.swift */; };
 		84DED5541F45E4D90039194B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DED5531F45E4D90039194B /* Profile.swift */; };
 		84F3FB291F49B2BA00E07316 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3FB281F49B2BA00E07316 /* CalculateViewController.swift */; };
+		84F41E141F49EFF700784EC6 /* FormulaInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F41E121F49EFF700784EC6 /* FormulaInput.storyboard */; };
 		904CC9160C38FD15EB2A97CC /* Pods_ICUcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BCF9FF832F8E072A2D282C /* Pods_ICUcalTests.framework */; };
 		DAA4826E878BF004CA2C02E8 /* Pods_ICUcal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33529F6DCD956A9443AB83F /* Pods_ICUcal.framework */; };
 		F1ACE11FF2E301A9F4C31214 /* Pods_ICUcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E36368E4119768D19267E2 /* Pods_ICUcalUITests.framework */; };
@@ -78,6 +79,7 @@
 		84DED5511F45D8EC0039194B /* NewPatient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPatient.swift; sourceTree = "<group>"; };
 		84DED5531F45E4D90039194B /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		84F3FB281F49B2BA00E07316 /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		84F41E131F49EFF700784EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FormulaInput.storyboard; sourceTree = "<group>"; };
 		8A4FCDDD3FE43A7233851248 /* Pods-ICUcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalTests/Pods-ICUcalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B33529F6DCD956A9443AB83F /* Pods_ICUcal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICUcal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7092100A86447F727C75956 /* Pods-ICUcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICUcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICUcalUITests/Pods-ICUcalUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				840D78CF1F472E800016E7FD /* AppInit.swift */,
 				8407B6481F45CAA8000F25AC /* Favorite.storyboard */,
 				8407B6451F45CA73000F25AC /* Formula.storyboard */,
+				84F41E121F49EFF700784EC6 /* FormulaInput.storyboard */,
 				848873121F47E9D500A066A2 /* CategoryViewController.swift */,
 				848C34A71F488D83002E36E8 /* FormulaController.swift */,
 				84F3FB281F49B2BA00E07316 /* CalculateViewController.swift */,
@@ -322,6 +325,7 @@
 				84A8D06D1F45C7E6003FCB55 /* Main.storyboard in Resources */,
 				8407B6491F45CAA8000F25AC /* Favorite.storyboard in Resources */,
 				8407B64C1F45CACC000F25AC /* Patient.storyboard in Resources */,
+				84F41E141F49EFF700784EC6 /* FormulaInput.storyboard in Resources */,
 				8407B6471F45CA73000F25AC /* Formula.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +582,14 @@
 				84A8D0711F45C7E6003FCB55 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84F41E121F49EFF700784EC6 /* FormulaInput.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F41E131F49EFF700784EC6 /* Base */,
+			);
+			name = FormulaInput.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
