@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="ZvI-Ut-cdx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kb6-GT-UU6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="E22-IQ-lcK"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="ic_home-1" id="E22-IQ-lcK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="JWk-Zk-WSn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -263,4 +263,7 @@
             <point key="canvasLocation" x="3549.5999999999999" y="-325.18740629685158"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_home-1" width="24" height="24"/>
+    </resources>
 </document>

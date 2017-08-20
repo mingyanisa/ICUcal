@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tyc-46-vIA" id="lUF-Aa-oqB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -38,13 +38,13 @@
             </objects>
             <point key="canvasLocation" x="1164" y="211"/>
         </scene>
-        <!--Item 2-->
+        <!--Favorites-->
         <scene sceneID="bGN-Zo-gjZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="poi-G3-Xvj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="lE0-jz-f9E"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="ic_stars" id="lE0-jz-f9E"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="N5o-ZU-vHr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="N5o-ZU-vHr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,4 +63,7 @@
             <point key="canvasLocation" x="380" y="210.94452773613196"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_stars" width="24" height="24"/>
+    </resources>
 </document>

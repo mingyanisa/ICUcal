@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sUQ-1i-u1R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sUQ-1i-u1R">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,6 +13,7 @@
         <scene sceneID="3IW-5p-Th6">
             <objects>
                 <tabBarController id="sUQ-1i-u1R" customClass="TabBarViewController" customModule="ICUcal" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="I1K-EN-2Dn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -32,7 +33,7 @@
         <scene sceneID="MXi-55-sJK">
             <objects>
                 <viewControllerPlaceholder storyboardName="Formula" id="UEV-UG-1My" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="QYc-ZW-J4J"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="ic_home" selectedImage="ic_home" id="QYc-ZW-J4J"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBR-d2-TM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +43,7 @@
         <scene sceneID="TWS-Mc-Hae">
             <objects>
                 <viewControllerPlaceholder storyboardName="Favorite" id="Sci-UQ-s85" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="QvA-fe-eHA"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="ic_star" id="QvA-fe-eHA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPz-X5-4IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,11 +53,16 @@
         <scene sceneID="0gt-Dw-IbH">
             <objects>
                 <viewControllerPlaceholder storyboardName="Patient" id="ex3-F5-FPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="z1f-Df-a0s"/>
+                    <tabBarItem key="tabBarItem" title="Patient" image="ic_add_box" id="z1f-Df-a0s"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rxi-tg-YtF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="408" y="498"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_add_box" width="24" height="24"/>
+        <image name="ic_home" width="24" height="24"/>
+        <image name="ic_star" width="24" height="24"/>
+    </resources>
 </document>

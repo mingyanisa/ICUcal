@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PD9-2G-ONf" id="CML-9Y-cc7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkX-8G-FZQ">
@@ -96,7 +96,7 @@
                                     </textField>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25b-XT-Knd">
                                         <rect key="frame" x="152" y="154" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="onTintColor" red="0.13725490200000001" green="0.83137254900000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </switch>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mht-Oy-ZIR">
                                         <rect key="frame" x="88" y="215" width="97" height="30"/>
@@ -305,13 +305,13 @@
             </objects>
             <point key="canvasLocation" x="3596" y="918.89055472263874"/>
         </scene>
-        <!--Item-->
+        <!--Patients-->
         <scene sceneID="Apk-LB-slK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ast-Vb-9dR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tBR-aO-9vC"/>
+                    <tabBarItem key="tabBarItem" title="Patients" image="ic_account_circle" id="tBR-aO-9vC"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="eln-UD-Pdp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="eln-UD-Pdp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -334,10 +334,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4fS-dk-C51" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pbk-WQ-tKu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pbk-WQ-tKu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.83137254900000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -528,10 +531,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o9L-67-5rF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vfo-6x-Td3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="vfo-6x-Td3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.13725490200000001" green="0.83137254900000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -543,6 +546,9 @@
             <point key="canvasLocation" x="2636" y="1762.6686656671666"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_account_circle" width="24" height="24"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OFY-q7-xGO"/>
     </inferredMetricsTieBreakers>
