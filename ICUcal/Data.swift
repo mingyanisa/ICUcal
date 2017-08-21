@@ -13,10 +13,15 @@ class RealmString: Object {
     dynamic var text = ""
 }
 
+class VariableObject: Object {
+    dynamic var name = ""
+    dynamic var unit = ""
+}
+
 class Formula: Object {
     dynamic var id = ""
     dynamic var name = ""
-    let variable = List<RealmString>()
+    let variable = List<VariableObject>()
     dynamic var type = ""
     dynamic var formula = ""
     dynamic var isFavorite = false

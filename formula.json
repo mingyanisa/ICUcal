@@ -1,45 +1,72 @@
 {
-    "allFormular": [
+    "allFormula": [
         {
             "name": "BMI",
             "variable": [
-                "weight",
-                "height"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                }
             ],
             "type": "General",
-            "formula": "a/(b*b)"
+            "formula": "a/(b*b*0.0001)"
         },
         {
             "name": "BSA",
             "variable": [
-                "weight",
-                "height"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                }
             ],
             "type": "General",
-            "formula": "(a*b/3600)**(0.5)"
+            "formula": "(a*b*0.01/3600)**(0.5)"
         },
         {
             "name": "Male predicted IBW",
             "variable": [
-                "height"
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                }
             ],
             "type": "General",
-            "formula": "a-100-(a-150)/4"
+            "formula": "a*0.01-100-(a*0.01-150)/4"
         },
         {
             "name": "Female predicted IBW",
             "variable": [
-                "height"
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                }
             ],
             "type": "General",
-            "formula": "a-100-(a-150)/2"
+            "formula": "a*0.01-100-(a*0.01-150)/2"
         },
         {
-            "name": "PPV",
+            "name": "PPV(%)",
             "variable": [
-                "PPmax",
-                "PPmin",
-                "PPmean"
+                {
+                    "name": "PPmax",
+                    "unit": "mmHg"
+                },
+                {
+                    "name": "PPmin",
+                    "unit": "mmHg"
+                },
+                {
+                    "name": "PPmean",
+                    "unit": "mmHg"
+                }
             ],
             "type": "Hemodynamic",
             "formula": "((a-b)/c)*100"
@@ -47,8 +74,15 @@
         {
             "name": "Distensibility Index",
             "variable": [
-                "IV CDmax",
-                "IV CDmin"
+                {
+                    "name": "IV CDmax",
+                    "unit": "mm"
+                },
+                {
+                    "name": "IV CDmin",
+                    "unit": "mm"
+                }
+                
             ],
             "type": "Hemodynamic",
             "formula": "(a-b)/b"
@@ -56,8 +90,14 @@
         {
             "name": "Collapsibility Index",
             "variable": [
-                "IV CDmax",
-                "IV CDmin"
+                {
+                    "name": "IV CDmax",
+                    "unit": "mm"
+                },
+                {
+                    "name": "IV CDmin",
+                    "unit": "mm"
+                }
             ],
             "type": "Hemodynamic",
             "formula": "(a-b)/a"
@@ -65,9 +105,19 @@
         {
             "name": "SVR",
             "variable": [
-                "M AP",
-                "CV P",
-                "CO"
+                {
+                    "name": "M AP",
+                    "unit": "mmHg"
+                },
+                {
+                    "name": "CV P",
+                    "unit": "mmHg"
+                },
+                {
+                    "name": "CO",
+                    "unit": "L/min"
+                }
+                
             ],
             "type": "Hemodynamic",
             "formula": "(a-b*79.9)/c"
@@ -75,9 +125,18 @@
         {
             "name": "PVR",
             "variable": [
-                "MP AP",
-                "PCW P",
-                "CO"
+                {
+                    "name": "MP AP",
+                    "unit": "mmHg"
+                },
+                {
+                    "name": "PCW P",
+                    "unit": "mmHg"
+                },
+                {
+                    "name": "CO",
+                    "unit": "L/min"
+                }
             ],
             "type": "Hemodynamic",
             "formula": "(a-b*79.9)/c"
@@ -85,10 +144,22 @@
         {
             "name": "CO",
             "variable": [
-                "V O2",
-                "Hb",
-                "SaO2",
-                "SvO2"
+                {
+                    "name": "V O2",
+                    "unit": "mL/min"
+                },
+                {
+                    "name": "Hb",
+                    "unit": "g/dL"
+                },
+                {
+                    "name": "SaO2",
+                    "unit": "%"
+                },{
+                    "name": "SvO2",
+                    "unit": "%"
+                }
+                
             ],
             "type": "Hemodynamic",
             "formula": "a/13.4*b*(c-d)"
@@ -96,58 +167,125 @@
         {
             "name": "CI",
             "variable": [
-                "CO",
-                "BSA"
+                {
+                    "name": "CO",
+                    "unit": "L/min"
+                },{
+                    "name": "BSA",
+                    "unit": "m2"
+                }
+                
             ],
             "type": "Hemodynamic",
             "formula": "a/b"
         },
         {
-            "name": "Male BEE",
+            "name": "QTc(sec)",
             "variable": [
-                "weight",
-                "height",
-                "age"
+                {
+                    "name": "QT",
+                    "unit": "sec"
+                },{
+                    "name": "RR",
+                    "unit": "sec"
+                }
+                
             ],
-            "type": "Nutrition",
-            "formula": "66.473+13.752*a+5.003*b-6.755*c"
+            "type": "EKG",
+            "formula": "a/(b**0.5)"
         },
         {
-            "name": "Female BEE",
+            "name": "Male BEE (kCal)",
             "variable": [
-                "weight",
-                "height",
-                "age"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                },
+                {
+                    "name": "Age",
+                    "unit": "year"
+                }
+                
             ],
             "type": "Nutrition",
-            "formula": "655.096+9.563*a+1.85*b-4.676*c"
+            "formula": "66.473+13.752*a+5.003*b*0.01-6.755*c"
         },
         {
-            "name": "Male BMR",
+            "name": "Female BEE (kCal)",
             "variable": [
-                "weight",
-                "height",
-                "age"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                },
+                {
+                    "name": "Age",
+                    "unit": "year"
+                }
             ],
             "type": "Nutrition",
-            "formula": "10*a+6.25*b-5*c+5"
+            "formula": "655.096+9.563*a+1.85*b*0.01-4.676*c"
         },
         {
-            "name": "Female BMR",
+            "name": "Male BMR (kCal)",
             "variable": [
-                "weight",
-                "height",
-                "age"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                },
+                {
+                    "name": "Age",
+                    "unit": "year"
+                }
             ],
             "type": "Nutrition",
-            "formula": "10*a+6.25*b-5*c-161"
+            "formula": "10*a+6.25*b*0.01-5*c+5"
         },
         {
-            "name": "Total Energy Expenditure",
+            "name": "Female BMR (kCal)",
             "variable": [
-                "BEE",
-                "AF",
-                "IF"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Height",
+                    "unit": "cm."
+                },
+                {
+                    "name": "Age",
+                    "unit": "year"
+                }
+            ],
+            "type": "Nutrition",
+            "formula": "10*a+6.25*b*0.01-5*c-161"
+        },
+        {
+            "name": "Total Energy Expenditure (kCal/day)",
+            "variable": [
+                {
+                    "name": "BEE",
+                    "unit": "kCal"
+                },
+                {
+                    "name": "AF",
+                    "unit": ""
+                },
+                {
+                    "name": "IF",
+                    "unit": ""
+                }
             ],
             "type": "Nutrition",
             "formula": "a*b*c"
@@ -155,9 +293,18 @@
         {
             "name": "Anion gap",
             "variable": [
-                "Na",
-                "Cl",
-                "HCO3"
+                {
+                    "name": "Na",
+                    "unit": "mmol/L"
+                },
+                {
+                    "name": "Cl",
+                    "unit": "mmol/L"
+                },
+                {
+                    "name": "HCO3",
+                    "unit": "mmol/L"
+                }
             ],
             "type": "Nephro",
             "formula": "a-b+c"
@@ -165,8 +312,14 @@
         {
             "name": "Corrected Anion gap",
             "variable": [
-                "Anion gap",
-                "alb"
+                {
+                    "name": "Anion gap",
+                    "unit": "mmol/L"
+                },
+                {
+                    "name": "alb",
+                    "unit": "g/L"
+                }
             ],
             "type": "Nephro",
             "formula": "a+0.25*(40-b)"
@@ -174,8 +327,14 @@
         {
             "name": "Water Deficit",
             "variable": [
-                "weight",
-                "Current Na"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Current Na",
+                    "unit": "mmol/L"
+                }
             ],
             "type": "Nephro",
             "formula": "0.6*a*(b/139)"
@@ -183,8 +342,14 @@
         {
             "name": "FW Deficit(Adult Female/Elderly Male)",
             "variable": [
-                "weight",
-                "Current Na"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Current Na",
+                    "unit": "mmol/L"
+                }
             ],
             "type": "Nephro",
             "formula": "0.5*a*(b/139)"
@@ -192,8 +357,14 @@
         {
             "name": "FW Deficit(Elderly Female)",
             "variable": [
-                "weight",
-                "Current Na"
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Current Na",
+                    "unit": "mmol/L"
+                }
             ],
             "type": "Nephro",
             "formula": "0.45*a*(b/139)"
@@ -201,9 +372,17 @@
         {
             "name": "GFR Creatinine Clearance",
             "variable": [
-                "age",
-                "weight",
-                "Cr"
+                {
+                    "name": "Age",
+                    "unit": "year"
+                },
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },{
+                    "name": "Cr",
+                    "unit": "mcmol/L"
+                }
             ],
             "type": "Nephro",
             "formula": "(140-a)*b/(72*c)"
@@ -211,9 +390,17 @@
         {
             "name": "GFR Creatinine Clearance (Female)",
             "variable": [
-                "age",
-                "weight",
-                "Cr"
+                {
+                    "name": "Age",
+                    "unit": "year"
+                },
+                {
+                    "name": "Weight",
+                    "unit": "kg."
+                },{
+                    "name": "Cr",
+                    "unit": "mcmol/L"
+                }
             ],
             "type": "Nephro",
             "formula": "(140-a)*b*0.85/(72*c)"
@@ -236,9 +423,17 @@
         {
             "name": "GFR CKD-EPI Male",
             "variable": [
-                "min",
-                "max",
-                "age"
+                {
+                    "name": "Min",
+                    "unit": "Scr/k,1"
+                },
+                {
+                    "name": "Max",
+                    "unit": "Scr/k,1"
+                },{
+                    "name": "Age",
+                    "unit": "year"
+                }
             ],
             "type": "Nephro",
             "formula": "141*(1/a*(0.411))*b-1.209*0.993*c"
@@ -246,38 +441,67 @@
         {
             "name": "GFR CKD-EPI Female",
             "variable": [
-                "min",
-                "max",
-                "age"
+                {
+                    "name": "Min",
+                    "unit": "Scr/k,1"
+                },
+                {
+                    "name": "Max",
+                    "unit": "Scr/k,1"
+                },{
+                    "name": "Age",
+                    "unit": "year"
+                }
             ],
             "type": "Nephro",
             "formula": "141*(1/a*(0.329))*b-1.209*0.993*c*1.018"
         },
         {
-            "name": "Rate",
+            "name": "Rate (ml/hr)",
             "variable": [
-                "IBW",
-                "dosage",
-                "drug dilution"
+                {
+                    "name": "IBW",
+                    "unit": "kg."
+                },
+                {
+                    "name": "Dosage",
+                    "unit": "mcg/kg/min"
+                },{
+                    "name": "Drug dilution",
+                    "unit": "mg/ml"
+                }
             ],
             "type": "Drugdose",
             "formula": "0.06*a*b/c"
         },
         {
-            "name": "Dosage",
+            "name": "Dosage (mcg/kg/min)",
             "variable": [
-                "Rate",
-                "drug dilution",
-                "IBW"
+                {
+                    "name": "Rate",
+                    "unit": "ml/hr"
+                },
+                {
+                    "name": "Drug dilution",
+                    "unit": "mg/ml"
+                },{
+                    "name": "IBW",
+                    "unit": "kg."
+                }
             ],
             "type": "Drugdose",
             "formula": "a*b/(0.06*c)"
         },
         {
-            "name": "Predicted VT ARDSNET",
+            "name": "Predicted VT ARDSNET (ml)",
             "variable": [
-                "target TV",
-                "ideal BW"
+                {
+                    "name": "target TV",
+                    "unit": "ml/kg"
+                },{
+                    "name": "ideal BW",
+                    "unit": "kg."
+                }
             ],
             "type": "Ventilator",
             "formula": "a*b"
@@ -285,8 +509,13 @@
         {
             "name": "PF ratio",
             "variable": [
-                "PaO2",
-                "FiO2"
+                {
+                    "name": "PaO2",
+                    "unit": "mmHg"
+                },{
+                    "name": "FiO2",
+                    "unit": "%"
+                }
             ],
             "type": "Ventilator",
             "formula": "a/b"

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -123,16 +124,30 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-mQ-Xgq">
+                                            <rect key="frame" x="343" y="38" width="24" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="3s4-CI-6Nh"/>
+                                                <constraint firstAttribute="width" constant="24" id="E2B-dl-Ggs"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="ic_star_border"/>
+                                            <connections>
+                                                <action selector="isPressFev:" destination="NSW-5F-tvc" eventType="touchUpInside" id="izl-oW-cvp"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="BfN-tW-cJR" secondAttribute="bottom" constant="11" id="2N9-Tl-pUN"/>
                                         <constraint firstItem="BfN-tW-cJR" firstAttribute="top" secondItem="fzK-hy-7ax" secondAttribute="top" constant="11" id="2rS-jt-5M4"/>
+                                        <constraint firstItem="hIH-mQ-Xgq" firstAttribute="trailing" secondItem="fzK-hy-7ax" secondAttribute="trailingMargin" id="4Z0-AO-nxN"/>
+                                        <constraint firstItem="hIH-mQ-Xgq" firstAttribute="centerY" secondItem="fzK-hy-7ax" secondAttribute="centerY" constant="0.5" id="Dk3-Mq-09U"/>
                                         <constraint firstAttribute="trailing" secondItem="BfN-tW-cJR" secondAttribute="trailing" id="lw6-LN-pDr"/>
                                         <constraint firstItem="BfN-tW-cJR" firstAttribute="leading" secondItem="fzK-hy-7ax" secondAttribute="leading" constant="11" id="pPU-ga-A7I"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="formulaName" destination="BfN-tW-cJR" id="4pK-jJ-2VE"/>
+                                    <outlet property="isFav" destination="hIH-mQ-Xgq" id="mz7-Mg-Xr6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -160,5 +175,6 @@
     </scenes>
     <resources>
         <image name="ic_home-1" width="24" height="24"/>
+        <image name="ic_star_border" width="24" height="24"/>
     </resources>
 </document>

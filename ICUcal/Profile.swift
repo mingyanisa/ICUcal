@@ -43,6 +43,7 @@ class ProfileViewController: UIViewController {
             case "editProfile":
                 let destination = segue.destination.childViewControllers[0] as! NewPatientViewController
                 destination.patient = patient
+                destination.previousView = self
                 break
             default:
                 break

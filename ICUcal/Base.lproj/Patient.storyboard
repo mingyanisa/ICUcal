@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ast-Vb-9dR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ast-Vb-9dR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PD9-2G-ONf" id="CML-9Y-cc7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkX-8G-FZQ">
@@ -335,7 +335,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4fS-dk-C51" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pbk-WQ-tKu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pbk-WQ-tKu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.83137254900000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -500,13 +500,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="ltq-Wn-D8L">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="oGu-TF-AoI">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.99676865179999996" green="0.99676865179999996" blue="0.99676865179999996" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="4fS-dk-C51" kind="presentation" identifier="editProfile" id="PUe-nd-hsl"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="0Jx-BR-jpg">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.94932100789999996" green="0.94932100789999996" blue="0.94932100789999996" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="doneBtnPressed:" destination="Uzu-lu-QDR" id="2W4-6l-CYW"/>
                             </connections>
@@ -532,7 +532,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o9L-67-5rF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="vfo-6x-Td3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vfo-6x-Td3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.83137254900000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -551,6 +551,6 @@
         <image name="ic_account_circle" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8fw-db-kWk"/>
+        <segue reference="PUe-nd-hsl"/>
     </inferredMetricsTieBreakers>
 </document>
