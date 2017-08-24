@@ -40,8 +40,8 @@ class FavoriteController: UITableViewController{
         let formula = Array(realm.objects(Formula.self).filter("isFavorite==true"))
         
         performSegue(withIdentifier: "calculateFormula", sender:  formula[indexPath.row])
-        
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier{
             switch identifier {
@@ -70,6 +70,9 @@ class FavoriteController: UITableViewController{
         del.backgroundColor = UIColor.red
         return[del]
     }
+    
+    
+    
     
 }
 class FavoriteTableViewCell: UITableViewCell{

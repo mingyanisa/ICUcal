@@ -50,10 +50,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Favorite" id="igN-8I-ea2"/>
+                    <connections>
+                        <segue destination="6mz-Ts-aci" kind="show" identifier="calculateFormula" id="Kna-aw-r4v"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON1-qQ-8yh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1164" y="210.94452773613196"/>
+        </scene>
+        <!--FormulaInput-->
+        <scene sceneID="m9Q-nW-35O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FormulaInput" id="6mz-Ts-aci" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOZ-i7-NrF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="210"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="bGN-Zo-gjZ">
