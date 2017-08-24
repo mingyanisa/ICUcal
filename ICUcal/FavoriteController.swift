@@ -11,8 +11,8 @@ import RealmSwift
 class FavoriteController: UITableViewController{
     var type : String?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.tableView.reloadData()
     }
     
@@ -29,7 +29,6 @@ class FavoriteController: UITableViewController{
         let realm = try! Realm()
         let formula = Array(realm.objects(Formula.self).filter("isFavorite==true"))
         
-        print(formula.count)
         return formula.count
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

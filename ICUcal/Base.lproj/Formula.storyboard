@@ -124,11 +124,11 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-mQ-Xgq">
-                                            <rect key="frame" x="343" y="38" width="24" height="24"/>
+                                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-mQ-Xgq">
+                                            <rect key="frame" x="279" y="6.5" width="88" height="88"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="24" id="3s4-CI-6Nh"/>
-                                                <constraint firstAttribute="width" constant="24" id="E2B-dl-Ggs"/>
+                                                <constraint firstAttribute="height" constant="88" id="Y4m-TB-nPG"/>
+                                                <constraint firstAttribute="width" constant="88" id="w13-Sm-cgq"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="ic_star_border"/>
                                             <connections>

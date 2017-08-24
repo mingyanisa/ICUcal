@@ -11,11 +11,6 @@ import RealmSwift
 class FormulaViewController: UITableViewController{
     var type : String?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.tableView.reloadData()
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let realm = try! Realm()
         let formula = Array(realm.objects(Formula.self).filter("type=='"+self.type!+"'"))
@@ -23,22 +18,9 @@ class FormulaViewController: UITableViewController{
         cell.formulaName.text! = formula[indexPath.row].name
         cell.isFav.setTitle(formula[indexPath.row].id, for: .normal)
         
-        
-        if(formula[indexPath.row].isFavorite == false){
-            cell.isFav.imageView?.image = #imageLiteral(resourceName: "ic_star_border")
-            print("return non fav")
-            
-            return cell
-            
-        }else{
-            cell.isFav.imageView?.image = #imageLiteral(resourceName: "ic_star")
-            print("return fav")
-            
-            return cell
-            
-        }
-        
-        print (formula[indexPath.row].name)
+        cell.isFav.imageView?.image = (formula[indexPath.row].isFavorite) ? #imageLiteral(resourceName: "ic_star") : #imageLiteral(resourceName: "ic_star_border")
+
+        return cell
        
     }
     
@@ -73,32 +55,19 @@ class FormulaViewController: UITableViewController{
     }
     
     @IBAction func isPressFev(_ sender: Any) {
-        let realm = try! Realm()
-        let formula = Array(realm.objects(Formula.self).filter("type=='"+self.type!+"'"))
-        
         if let button = sender as? UIButton{
-            
-            for i in 0..<self.tableView.numberOfRows(inSection: 0){
-                let indexpath = IndexPath(row: i, section: 0)
-                let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexpath) as! FormulaTableViewCell
-                if(formula[indexpath.row].id == button.currentTitle){
-                    try! realm.write {
-                        if(formula[indexpath.row].isFavorite == false){
-                            formula[indexpath.row].isFavorite = true
-                            self.tableView.reloadData()
-                        }else{
-                            formula[indexpath.row].isFavorite = false
-                            self.tableView.reloadData()
-                        }
-                    }
-                   
-                    
-                }
+            let realm = try! Realm()
+            let object = realm.object(ofType: Formula.self, forPrimaryKey: button.currentTitle)
+            try! realm.write {
+                object?.isFavorite = !(object?.isFavorite)!
             }
-            
+            DispatchQueue.main.async{
+                self.tableView.reloadData()
+            }
         }
     }
 }
+
     
 
 class FormulaTableViewCell: UITableViewCell {
